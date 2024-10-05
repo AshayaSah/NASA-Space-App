@@ -1,0 +1,85 @@
+/* General Styles */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Subheading */
+.subheading {
+    height: 15vh;
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Content Section */
+.content {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Description */
+.description {
+    width: 45%;
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+/* Video Carousel Container */
+.video-carousel-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+/* Video Carousel */
+.video-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.video-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+video-item iframe {
+    width: 100%;
+    height: 250px;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
