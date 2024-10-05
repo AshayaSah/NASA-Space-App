@@ -14,6 +14,6 @@ document.querySelector(".left-btn").addEventListener("click", () => {
 
 function updateCarousel() {
   const carousel = document.querySelector(".video-carousel");
-  constslideWidth = slides[0].clientWidth;
+  const slideWidth = slides[0].clientWidth;
   carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
